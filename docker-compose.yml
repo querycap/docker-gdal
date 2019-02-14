@@ -1,0 +1,7 @@
+version: "3.2"
+
+services:
+  gdal:
+    image: "querycap/gdal"
+    build: .
+    command: "gdalinfo --version && gdalinfo --formats && ogrinfo --formats"
